@@ -20,4 +20,8 @@ describe('splitString', () => {
   it('returns one character and _', () => {
     expect(splitString('b')).toBe('b_');
   })
+
+  it('returns one character and _', () => {
+    expect(splitString('c')).toBe('c_');
+  })
 })
