@@ -52,4 +52,12 @@ describe('splitString', () => {
   it('returns _ at end for odd length', () => {
     expect(splitString('abc')).toEqual(['ab', 'c_']);
   })
+
+  it('returns _ at end for odd length', () => {
+    expect(splitString('abcde')).toEqual(['ab', 'cd', 'e_']);
+  })
+
+  it('returns _ at end for odd length', () => {
+    expect(splitString('opqrs')).toEqual(['op', 'qr', 's_']);
+  })
 })
