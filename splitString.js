@@ -4,8 +4,10 @@ const splitString = (originalString) => {
   } else if (originalString.length === 2) {
     return [originalString];
   } else {
-    
-    return [originalString.slice(0, 2), originalString.slice(2, 4)];
+    let splitArray = [];
+    for (let i = 0; i < originalString.length; i += 2)
+    splitArray.push(originalString.slice(i, i + 2));
+    return splitArray;
   }
 }
 
