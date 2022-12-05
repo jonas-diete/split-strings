@@ -1,5 +1,9 @@
 const splitString = (originalString) => {
-  return originalString;
+  if (originalString.length === 1) {
+    return originalString + '_';
+  } else {
+    return originalString;
+  }
 }
 
 module.exports = splitString;
