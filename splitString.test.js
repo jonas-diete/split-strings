@@ -48,4 +48,8 @@ describe('splitString', () => {
   it('returns many sets of 2 chars', () => {
     expect(splitString('ghijklmnop')).toEqual(['gh', 'ij', 'kl', 'mn', 'op']);
   })
+
+  it('returns _ at end for odd length', () => {
+    expect(splitString('abc')).toEqual(['ab', 'c_']);
+  })
 })
