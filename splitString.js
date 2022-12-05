@@ -4,7 +4,8 @@ const splitString = (originalString) => {
   } else if (originalString.length === 2) {
     return [originalString];
   } else {
-    return ['ab', 'cd'];
+    
+    return [originalString.slice(0, 2), originalString.slice(2, 4)];
   }
 }
 
