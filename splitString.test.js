@@ -2,26 +2,30 @@ const splitString = require('./splitString');
 
 describe('splitString', () => {
   it('returns two characters', () => {
-    expect(splitString('ab')).toBe('ab');
+    expect(splitString('ab')).toEqual(['ab']);
   })
 
   it('returns two other characters', () => {
-    expect(splitString('cd')).toBe('cd');
+    expect(splitString('cd')).toEqual(['cd']);
   })
 
   it('returns two other characters', () => {
-    expect(splitString('ef')).toBe('ef');
+    expect(splitString('ef')).toEqual(['ef']);
   })
 
   it('returns one character and _', () => {
-    expect(splitString('a')).toBe('a_');
+    expect(splitString('a')).toEqual(['a_']);
   })
 
   it('returns one character and _', () => {
-    expect(splitString('b')).toBe('b_');
+    expect(splitString('b')).toEqual(['b_']);
   })
 
   it('returns one character and _', () => {
-    expect(splitString('c')).toBe('c_');
+    expect(splitString('c')).toEqual(['c_']);
+  })
+
+  it('returns two sets of 2 letters', () => {
+    expect(splitString('a')).toEqual(['a_']);
   })
 })
