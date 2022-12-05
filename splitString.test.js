@@ -60,4 +60,8 @@ describe('splitString', () => {
   it('returns _ at end for odd length', () => {
     expect(splitString('opqrs')).toEqual(['op', 'qr', 's_']);
   })
+
+  it('returns empty array', () => {
+    expect(splitString('')).toEqual([]);
+  })
 })
