@@ -1,5 +1,5 @@
 const splitString = (originalString) => {
-  return 'ab';
+  return originalString;
 }
 
 module.exports = splitString;
