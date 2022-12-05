@@ -45,7 +45,7 @@ describe('splitString', () => {
     expect(splitString('ghijkl')).toEqual(['gh', 'ij', 'kl']);
   })
 
-  it('returns multiple sets of 2 chars', () => {
+  it('returns many sets of 2 chars', () => {
     expect(splitString('ghijklmnop')).toEqual(['gh', 'ij', 'kl', 'mn', 'op']);
   })
 })
