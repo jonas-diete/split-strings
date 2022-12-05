@@ -8,4 +8,8 @@ describe('splitString', () => {
   it('returns two other characters', () => {
     expect(splitString('cd')).toBe('cd');
   })
+
+  it('returns two other characters', () => {
+    expect(splitString('ef')).toBe('ef');
+  })
 })
