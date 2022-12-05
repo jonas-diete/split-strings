@@ -40,4 +40,8 @@ describe('splitString', () => {
   it('returns multiple sets of 2 chars', () => {
     expect(splitString('abcdef')).toEqual(['ab', 'cd', 'ef']);
   })
+
+  it('returns multiple sets of 2 chars', () => {
+    expect(splitString('ghijkl')).toEqual(['gh', 'ij', 'kl']);
+  })
 })
