@@ -26,6 +26,6 @@ describe('splitString', () => {
   })
 
   it('returns two sets of 2 letters', () => {
-    expect(splitString('a')).toEqual(['a_']);
+    expect(splitString('abcd')).toEqual(['ab', 'cd']);
   })
 })
